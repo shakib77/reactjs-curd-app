@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { HomePage } from './components/home';
+import { HomePage } from './components/homePage';
 import { AddUser } from './components/add-user';
 import { EditUser } from './components/edit-user'
 
@@ -20,7 +20,7 @@ function App() {
       </BrowserRouter>
 
     </div>
-  );
-}
+  )
+};
 
 export default App;
