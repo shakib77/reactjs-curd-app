@@ -9,9 +9,7 @@ import {
     Button
 } from 'reactstrap';
 
-
-
-export const EditUser = () => {
+export const EditItem = () => {
     return (
         <div>
             <Form>
