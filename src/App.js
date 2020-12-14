@@ -9,7 +9,7 @@ import { AddItem } from './components/add-item';
 import { EditItem } from "./components/edit-item";// import { UserList } from './components/user-list';
 import { GlobalProvider } from './context/global-state';
 
-function App() {
+const App = () => {
   return (
     <div style={{ maxWidth:'30rem', margin:'4rem auto'}}>
     <GlobalProvider>
@@ -17,7 +17,7 @@ function App() {
           <Switch>
             < Route exact path="/" component={ HomePage } />
             < Route path="/add" component={ AddItem } />
-            < Route path="/edit/" component={ EditItem } />
+            < Route path="/edit/:id" component={ EditItem } />
           </Switch>
         </BrowserRouter>
     </GlobalProvider>
